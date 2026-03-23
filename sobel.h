@@ -10,6 +10,11 @@ extern int num_threads;
 extern int Kx[3][3];
 extern int Ky[3][3];
 
-// Thread function argument - TODO
-
-// Function declarations - TODO
+// Thread function argument - DONE
+typedef struct {
+    int start_row;
+    int end_row;
+} ThreadArgs;
+ 
+// Function declarations - DONE
+void *sobel_worker(void *arg);

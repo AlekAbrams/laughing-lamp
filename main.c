@@ -138,11 +138,11 @@ int main(int argc, char *argv[]) {
     free(output_image);
     output_image = NULL;
 
-    // Free input_image pointer array (rows point into data, not separately malloc'd)
+    // Free input_image pointer array
     free(input_image);
     input_image = NULL;
 
-    // Free the original stb data buffer
+    // Free original stb data buffer
     stbi_image_free(data);
     data = NULL;
 
